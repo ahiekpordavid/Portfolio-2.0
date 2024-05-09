@@ -3,11 +3,13 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import "../../index.css";
 import beachImage from "../../assets/beach.jpg"
-import seawaves from "../../assets/pro1.jpg"
+import seawaves from "../../assets/waves.jpg"
+import waterDrops from "../../assets/waterDrops.jpg"
+import greens from "../../assets/greens.jpg"
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [backgroundImage, setBackgroundImage] = useState(beachImage);
+  const [backgroundImage, setBackgroundImage] = useState(greens);
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleMenuToggle = () => {
@@ -22,6 +24,14 @@ const Navbar = () => {
     {
       name: "Sea Waves",
       image: seawaves
+    },
+    {
+      name: "Water Drops",
+      image: waterDrops
+    },
+    {
+      name: "Green Leaves",
+      image: greens
     }
   ];
 
