@@ -74,12 +74,12 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-xl font-bold text-slate-500 mb-10 ">Themes</p>
+            <p className="md:text-xl text-lg font-bold text-slate-500 mb-10">Themes</p>
             {themes.map((theme, index) => (
               <button key={index} onClick={() => setBackgroundImage(theme.image)}  className="flex flex-col mb-5">
                 <div className="flex flex-row gap-5 items-center">
-                  <img src={theme.image} alt="themeImage" className="w-[50px] h-[50px] rounded-full"/>
-                  <p>{theme.name}</p>
+                  <img src={theme.image} alt="themeImage" className="md:w-[50px] md:h-[50px] w-[25px] h-[25px] rounded-full"/>
+                  <p className="md:text-md text-sm">{theme.name}</p>
                 </div>
               </button>
             ))}
