@@ -2,14 +2,14 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="mb-[200px]">
+    <div className="lg:pb-[200px] pb-[100px]">
       <p className="font-medium border-1 rounded-full px-10 border-slate-600 w-max uppercase py-[6px] text-xs">
         Resume
       </p>
-      <p className="text-[55px] font-light mt-20">
+      <p className="lg:text-[55px] text-[38px] font-light mt-20">
         <span className="text-green-400">Education</span> & Experience
       </p>
-      <div className="flex flex-row gap-10 mt-20">
+      <div className="flex lg:flex-row flex-col gap-10 mt-20">
         <div className="border border-slate-400 w-full rounded-3xl p-5">
           <p className="text-md text-slate-300 font-semibold mb-5">
             SEP 2017 – <span className="text-green-400">JUN 2021</span>

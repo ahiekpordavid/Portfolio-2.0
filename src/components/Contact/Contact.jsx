@@ -5,8 +5,8 @@ import { Button } from "@mui/material";
 
 const Contact = () => {
   return (
-    <div className="pl-[740px] pt-[50px] pr-[300px] app-bg">
-      <div className="pb-[200px]">
+    <div className="px-[20px] sm:px-[80px]  lg:pl-[740px] pt-[50px] lg:pr-[300px] app-bg">
+      <div className="lg:pb-[200px] pb-[100px]">
         <p className="font-medium border-1 rounded-full px-10 border-slate-600 w-max uppercase py-[6px] text-xs">
           Contact
         </p>
@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
         <div className="w-full h-[0.5px] bg-white mt-10"></div>
         <div className="mt-10 flex flex-col gap-16">
-          <div className="flex flex-row gap-5">
+          <div className="flex lg:flex-row flex-col lg:gap-5 gap-16">
             <div className="flex flex-col flex-1">
               <label for="name" className="uppercase text-sm">
                 Name

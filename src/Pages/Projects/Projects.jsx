@@ -50,7 +50,7 @@ const Projects = () => {
 
   return (
     <div className="app-bg pl-[740px] pt-[50px] pr-[300px]">
-      <div className="pb-[100px]">
+      <div className="md:pb-[100px] pb-[50px]">
         <p className="text-[55px] font-light mt-20">
           <span className="text-green-400">All Featured</span> Projects
         </p>

@@ -9,13 +9,13 @@ import CallIcon from "@mui/icons-material/Call";
 
 const Profile = () => {
   return (
-    <div className="flex fixed z-20 top-0 left-0 bottom-0 py-10 px-20  w-[550px] items-center">
-      <div className="border-slate-500 border rounded-3xl w-[400px] p-10 flex flex-col items-center">
+    <div className="flex xl:fixed xl:z-20 xl:top-0 xl:left-0 xl:bottom-0 py-10 xl:px-20  xl:w-[550px] items-center">
+      <div className="border-slate-500 border rounded-3xl w-[100%] xl:w-[400px] p-10 flex flex-col items-center">
         <div className="flex flex-row items-center gap-10">
           <img
             src={logo}
             alt="Logo"
-            className="w-[80px] sm:w-[110px] object-contain"
+            className="w-[60px] xl:w-[80px] sm:w-[110px] object-contain"
           />
           <p className="font-bold">MERN Stack Developer</p>
         </div>

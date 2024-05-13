@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import './index.css';
+import "./index.css";
 import Home from "./Pages/Home/Home";
 import Projects from "./Pages/Projects/Projects";
 import Navbar from "./components/Navbar/Navbar";
@@ -12,7 +12,9 @@ function App() {
     <BrowserRouter>
       <div className="w-screen h-screen">
         <Navbar />
-        <Profile />
+        <div className=" hidden xl:flex">
+          <Profile />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

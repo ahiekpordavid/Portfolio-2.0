@@ -47,7 +47,7 @@ const Navbar = () => {
   }, [backgroundImage]);
 
   return (
-    <div className="flex justify-end fixed z-20 top-0 left-0 right-0 pt-10 px-20">
+    <div className="flex justify-end fixed z-20 top-0 left-0 right-0 pt-10 md:px-20 px-[20px] w-screen">
       {!toggleMenu && (
         <div className="border rounded-3xl p-3">
           <MenuRoundedIcon

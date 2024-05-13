@@ -9,7 +9,7 @@ const Projects = () => {
   const data = [
     {
       id: 1,
-      icon: <img src={project1} alt="code"  className="h-[400px] w-full object-fit rounded-[35px]"/>,
+      icon: <img src={project1} alt="code"  className="md:h-[400px] h-[250px] w-full object-fit rounded-[35px]"/>,
       name: "Deka Client",
       description: "Agriculture App",
       stack: ["React Js", "Express Js", "MongoDB"],
@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      icon: <img src={project3} alt="Api"  className="h-[400px] w-full object-fit rounded-[35px]"/>,
+      icon: <img src={project3} alt="Api"  className="md:h-[400px] h-[250px] w-full object-fit rounded-[35px]"/>,
       name: "Deka Admin",
       description: "Agriculture App",
       stack: ["React Js", "Express Js", "MongoDB"],
@@ -31,11 +31,11 @@ const Projects = () => {
     navigate(`/projects/${item}`);
   };
   return (
-    <div className="pb-[200px]">
+    <div className="lg:pb-[200px] pb-[100px]">
       <p className="font-medium border-1 rounded-full px-10 border-slate-600 w-max uppercase py-[6px] text-xs">
         Projects
       </p>
-      <p className="text-[55px] font-light mt-20">
+      <p className="lg:text-[55px] text-[38px] font-light mt-20">
         <span className="text-green-400">Featured</span> Projects
       </p>
       <div className="flex flex-col gap-20 mt-20">
