@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 
 const Contact = () => {
   return (
-    <div className="px-[20px] sm:px-[80px]  lg:pl-[740px] pt-[50px] lg:pr-[300px] app-bg">
+    <div className="px-[20px] sm:px-[80px]  xl:pl-[740px] pt-[50px] xl:pr-[300px] app-bg">
       <div className="lg:pb-[200px] pb-[100px]">
         <p className="font-medium border-1 rounded-full px-10 border-slate-600 w-max uppercase py-[6px] text-xs">
           Contact
