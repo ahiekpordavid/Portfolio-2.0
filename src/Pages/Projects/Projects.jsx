@@ -14,7 +14,7 @@ const Projects = () => {
       icon: (
         <img
           src={project1}
-          alt="code"
+          alt="Deka Client"
           className="md:h-[400px] h-[250px] w-full object-fit rounded-[35px]"
         />
       ),
@@ -28,7 +28,7 @@ const Projects = () => {
       icon: (
         <img
           src={project3}
-          alt="Api"
+          alt="Deka Admin"
           className="md:h-[400px] h-[250px] w-full object-fit rounded-[35px]"
         />
       ),
@@ -42,7 +42,7 @@ const Projects = () => {
       icon: (
         <img
           src={project4}
-          alt="Api"
+          alt="Deka Admin"
           className="md:h-[400px] h-[250px] w-full object-fit rounded-[35px]"
         />
       ),
@@ -56,7 +56,7 @@ const Projects = () => {
       icon: (
         <img
           src={project5}
-          alt="Api"
+          alt="Deka Admin"
           className="md:h-[400px] h-[250px] w-full object-fit rounded-[35px]"
         />
       ),
@@ -67,8 +67,8 @@ const Projects = () => {
     },
   ];
 
-  const handleAboutProjects = (item) => {
-    navigate(`/projects/${item}`);
+  const handleAboutProjects = (id) => {
+    navigate(`/projects/${id}`);
   };
 
   return (
@@ -80,31 +80,34 @@ const Projects = () => {
         <div className="flex flex-col gap-20 mt-20">
           {data.map((item) => (
             <div
+              key={item.id}
               className="hover:underline hover:cursor-pointer hover:opacity-90"
               onClick={() => handleAboutProjects(item.id)}
             >
               <div className="w-full rounded-[50px] relative">
                 {item.icon}
-                <div className="absolute bottom-7 left-7  rounded-[50px] flex flex-row justify-between">
-                  <div className="flex gap-5">
-                    {item.stack.map((items) => (
-                      <p className="px-4 py-2 hover:bg-slate-900 text-white bg-slate-500 shadow-xl  rounded-3xl sm:text-md text-sm">
-                        {items}
+                <div className="absolute sm:bottom-7 sm:left-7 bottom-4 left-4  rounded-[50px] flex flex-row justify-between">
+                  <div className="flex sm:gap-5 gap-2">
+                    {item.stack.map((tech, index) => (
+                      <p
+                        key={index}
+                        className="px-4 py-2 hover:bg-slate-900 text-white bg-slate-500 shadow-xl rounded-3xl sm:text-base text-[10px]"
+                      >
+                        {tech}
                       </p>
                     ))}
                   </div>
                 </div>
-                <div className="absolute sm:top-7  sm:right-7  top-4 right-4 rounded-[50px] flex flex-row justify-between">
-                  <div className="flex gap-7 hover:bg-slate-900 p-3 bg-slate-500 rounded-[50px] sm:text-md text-sm">
-                    {item?.links?.map((items) => (
-                      <div> {items}</div>
+                <div className="absolute sm:top-7 sm:right-7 top-4 right-4 rounded-[50px] flex flex-row justify-between">
+                  <div className="flex gap-7 hover:bg-slate-900 sm:p-3 p-2 bg-slate-500 rounded-[50px] sm:text-base text-[10px]">
+                    {item?.links?.map((link) => (
+                      <div key={link.key}> {link}</div>
                     ))}
                   </div>
                 </div>
               </div>
-              <p className="text-xl font-normal mt-5 ">
-                {item.name} -
-                <span className="text-slate-300">{item.description}</span>
+              <p className="text-xl font-normal mt-5">
+                {item.name} - <span className="text-slate-300">{item.description}</span>
               </p>
             </div>
           ))}

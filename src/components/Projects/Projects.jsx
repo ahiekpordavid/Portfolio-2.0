@@ -43,17 +43,17 @@ const Projects = () => {
           <div className="hover:underline hover:cursor-pointer hover:opacity-90" onClick={() => handleAboutProjects(item.id)}>
             <div className="w-full rounded-[50px] relative">
               {item.icon}
-              <div className="absolute bottom-7 left-7  rounded-[50px] flex flex-row justify-between">
-                <div className="flex gap-5">
+              <div className="absolute sm:bottom-7 sm:left-7 bottom-4 left-4  rounded-[50px] flex flex-row justify-between">
+                <div className="flex sm:gap-5 gap-3">
                   {item.stack.map((items) => (
-                    <p className="px-4 py-2 hover:bg-slate-900 text-white bg-slate-500 shadow-xl  rounded-3xl sm:text-md text-sm">
+                    <p className="px-4 py-2 hover:bg-slate-900 text-white bg-slate-500 shadow-xl  rounded-3xl sm:text-base text-[10px]">
                       {items}
                     </p>
                   ))}
                 </div>
               </div>
               <div className="absolute sm:top-7  sm:right-7  top-4 right-4 rounded-[50px] flex flex-row justify-between">
-                <div className="flex gap-7 hover:bg-slate-900 p-3 bg-slate-500 rounded-[50px] sm:text-md text-sm">
+                <div className="flex gap-7 hover:bg-slate-900 sm:p-3 p-2 bg-slate-500 rounded-[50px] sm:text-base text-[10px]">
                   {item?.links?.map((items) => (
                     <div> {items}</div>
                   ))}
