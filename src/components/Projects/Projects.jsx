@@ -46,14 +46,14 @@ const Projects = () => {
               <div className="absolute bottom-7 left-7  rounded-[50px] flex flex-row justify-between">
                 <div className="flex gap-5">
                   {item.stack.map((items) => (
-                    <p className="px-4 py-2 hover:bg-slate-900 text-white bg-slate-500 shadow-xl  rounded-3xl text-md">
+                    <p className="px-4 py-2 hover:bg-slate-900 text-white bg-slate-500 shadow-xl  rounded-3xl sm:text-md text-sm">
                       {items}
                     </p>
                   ))}
                 </div>
               </div>
-              <div className="absolute top-7  right-7 rounded-[50px] flex flex-row justify-between">
-                <div className="flex gap-7 hover:bg-slate-900 p-3 bg-slate-500 rounded-[50px]">
+              <div className="absolute sm:top-7  sm:right-7  top-4 right-4 rounded-[50px] flex flex-row justify-between">
+                <div className="flex gap-7 hover:bg-slate-900 p-3 bg-slate-500 rounded-[50px] sm:text-md text-sm">
                   {item?.links?.map((items) => (
                     <div> {items}</div>
                   ))}

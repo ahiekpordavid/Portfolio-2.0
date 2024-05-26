@@ -22,7 +22,7 @@ const Intro = () => {
           <p className="text-3xl">Years Experience</p>
         </div>
         <div className="border border-slate-400  w-full rounded-3xl p-5">
-          <p className="text-[50px] font-light text-green-400">20</p>
+          <p className="text-[50px] font-light text-green-400">6</p>
           <p className="text-3xl">Projects</p>
         </div>
       </div>
