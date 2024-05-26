@@ -44,10 +44,14 @@ const Navbar = () => {
   useEffect(() => {
     if (backgroundImage) {
       const styleTag = document.createElement("style");
-      styleTag.innerHTML = `body { 
-        background-image: url('${backgroundImage}'); 
-        background-attachment: fixed;
-      }`;
+      styleTag.innerHTML = `
+        body {
+          background-image: url('${backgroundImage}'); 
+          background-size: fit;
+          background-position: center;
+          background-attachment: fixed;
+        }
+      `;
       document.head.appendChild(styleTag);
       return () => {
         document.head.removeChild(styleTag);
